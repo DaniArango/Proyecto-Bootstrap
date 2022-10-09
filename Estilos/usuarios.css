@@ -3,7 +3,9 @@
 
 
 .contenedor-body{
-    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+    background-image:url(../assets/TombFondo.png);
+    background-position: relative;
+    background-attachment: fixed;
     text-align: center;
     color: azure;
     padding-top: 200px;

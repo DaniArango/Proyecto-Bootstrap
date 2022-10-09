@@ -7,7 +7,7 @@ const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
 const boton = document.getElementById("botn1")
 const boton2 = document.getElementById("botn2")
-const boton3= document.getElementById("botn3")
+
 
 function paintUser(){
   let perfil = JSON.parse(localStorage.getItem("users"))
@@ -64,7 +64,7 @@ function onSubmitF(e) {
 
   boton.addEventListener('click',onSubmitF)
   boton2.addEventListener('click',onDelete)
-  boton3.addEventListener('click',Usuarios)
+
     
  
     
