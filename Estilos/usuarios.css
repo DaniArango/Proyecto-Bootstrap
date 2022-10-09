@@ -1,0 +1,45 @@
+
+.contenedor-body{
+    background-color: black;
+    text-align: center;
+    color: azure;
+    padding-top: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20PX;
+
+}
+
+.contenedor-footer{
+    display: inline-block;
+    background-color: black ;
+    flex-wrap: wrap;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+img{
+    
+    height: 10%;
+    width: 10%;
+    object-fit: contain;
+
+}
+
+
+.redes{
+    width: 24%;
+    height: 24%;
+    overflow: hidden;
+    position: sticky;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center
+}
+
+
+
+ 
