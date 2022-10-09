@@ -7,15 +7,30 @@ const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
 const boton = document.getElementById("botn1")
 const boton2 = document.getElementById("botn2")
+const boton3= document.getElementById("botn3")
+
+function paintUser(){
+  let perfil = JSON.parse(localStorage.getItem("users"))
+  console.log("Mi objeto",perfil)
+ 
+}
+function Usuarios(){
+  for(let i=0; i<localStorage.length; i++) {
+    let key = localStorage.key(i);
+    console.log(`${key}: ${localStorage.getItem(key)}`);
+  }
+}
 
 
 function onSubmitF(e) {
     e.preventDefault()
-    const usuario = {
+    let usuario = {
         primerNombre:primerNombre.value,
         apellido:apellido.value,
         email: email.value,
-        password:password.value,}
+        password:password.value}
+
+   
 
       if (primerNombre.value === "" || apellido.value === "" || email.value === "" || password.value === "" || password2.value === "" ) {
        //.innerHTML = "<p class='tex-completo'> Lee con atención y rellena el formulario</p>";
@@ -33,18 +48,23 @@ function onSubmitF(e) {
         //msg.innerHTML = "<p class='tex-datos'> ¡Aww yeah! Ahora eres parte de la mejor comunidad Tomb Raider...¡¡¡FELICIDADES!!!</p>";
         alert("Aww yeah! Ahora eres parte de la mejor comunidad Tomb Raider...¡¡¡FELICIDADES!!!")
       }
-      localStorage.setItem("form", JSON.stringify(usuario));
-      paintUser()
+
+    const usuarios = JSON.parse(localStorage.getItem("users"));
+    let usuariostomb= usuarios || [];
+    usuariostomb.push(usuario)
+    localStorage.setItem("users", JSON.stringify(usuariostomb))
+    paintUser();
+
     }
 
-
-    function paintUser(){
-      const userStorage =JSON.parse(localStorage.getItem('userStorage'));
-      console.log(userStorage)
-      
-  }
+    function onDelete(e)
+    {
+      localStorage.clear()
+    }
 
   boton.addEventListener('click',onSubmitF)
+  boton2.addEventListener('click',onDelete)
+  boton3.addEventListener('click',Usuarios)
     
  
     
