@@ -1,13 +1,6 @@
 let users = JSON.parse(localStorage.getItem("users"));
 let usuariost= document.querySelector('.contenedor-users');
 
-for(let i=0; i<users.length; i++) {
-    let key = localStorage.key(i);
-    console.log(`${key}: ${localStorage.getItem(key)}`);
-   
-  }
-
-  
   /*function generateListItems(arg){
     let allusers=" "
     for(let i=0; i<arg.length; i++) {
@@ -38,9 +31,10 @@ for(let i=0; i<users.length; i++) {
         `       <div class="card-header">
                     Tomb Raider${i + 1}
                 </div>
-                <ul class="list-group list-group-flush">
+                <img  src="../assets/Gaming.png" class="card-img-top" width="150" height="170">
+                <ul class="list-group>
                   <li class="list-group-item"><div><b>Nombre:</b></div> <div>${users[i].primerNombre}</div></li>
-                  <li class="list-group-item"><div><b>Nombre:</b></div> <div>${users[i].apellido}</div></li>
+                  <li class="list-group-item"><div><b>Apellido:</b></div> <div>${users[i].apellido}</div></li>
                   <li class="list-group-item"><div><b>Correo:</b></div> <div>${users[i].email}</div></li>
                 </ul>
                `;

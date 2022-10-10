@@ -67,7 +67,7 @@ function onSubmitF(e) {
     password.value =""
     password2.value= ""
     setTimeout(function () {
-    }, 5000);
+    }, 3000);
 
 
     }
@@ -83,7 +83,7 @@ function onSubmitF(e) {
           div_sucess.removeChild(div_sucess.firstChild);
       }
         const pop_alert = document.createElement('div');
-        pop_alert.className = "alert alert-success mt-3";
+        pop_alert.className = "alert alert-primary";
         pop_alert.role = "alert";
         pop_alert.innerHTML = "Bienvenid@ a la mejor comunidad ¡¡FELICIDADES!!";
         div_sucess.appendChild(pop_alert);
@@ -92,7 +92,7 @@ function onSubmitF(e) {
         setTimeout(() => {
             pop_alert.remove();
             location.href = "formulario.html"
-        }, 5000);
+        }, 3000);
     }
 
   boton.addEventListener('click',onSubmitF)
