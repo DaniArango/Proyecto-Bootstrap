@@ -47,13 +47,24 @@ function onSubmitF(e) {
       else {
         //msg.innerHTML = "<p class='tex-datos'> ¡Aww yeah! Ahora eres parte de la mejor comunidad Tomb Raider...¡¡¡FELICIDADES!!!</p>";
         alert("Aww yeah! Ahora eres parte de la mejor comunidad Tomb Raider...¡¡¡FELICIDADES!!!")
+
+        const usuarios = JSON.parse(localStorage.getItem("users"));
+        let usuariostomb= usuarios || [];
+        usuariostomb.push(usuario)
+        localStorage.setItem("users", JSON.stringify(usuariostomb))
+        paintUser();
+    
+       
       }
 
-    const usuarios = JSON.parse(localStorage.getItem("users"));
-    let usuariostomb= usuarios || [];
-    usuariostomb.push(usuario)
-    localStorage.setItem("users", JSON.stringify(usuariostomb))
-    paintUser();
+      primerNombre.value= ""
+      apellido.value= ""
+    email.value =""
+    password.value =""
+    password2.value= ""
+    setTimeout(function () {
+    }, 3000);
+
 
     }
 

@@ -3,31 +3,27 @@
 
 
 .contenedor-body{
-    background-image:url(../assets/TombFondo.png);
-    background-position: relative;
-    background-attachment: fixed;
+
+    display: grid;
     text-align: center;
-    color: azure;
-    padding-top: 200px;
-    padding-left: 60px;
-    padding-right: 60px;
+    color: rgb(15, 15, 15);
+    padding-top: 100px;
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 15PX;
+    font-size: 20PX;
+    overflow-x: hidden;
+
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20PX;
+    
 
 }
-
-.carousel-inner > .carousel-item > img {
-    height: 20%;
-    
-    
-  }
-
 
   .contenedor-footer{
     display: inline-block;
     background-color: black ;
     padding: 30px 0 30px 0;
     text-align: center;
+    
 }
 
 
@@ -36,6 +32,7 @@ img{
     height: 10%;
     width: 10%;
     object-fit: contain;
+    
    
 
 }
@@ -48,8 +45,10 @@ img{
     position: sticky;
     cursor: pointer;
     display: inline-block;
-    justify-content: center
+    justify-content: center;
+    
+
+
+    
 }
 
-
- 

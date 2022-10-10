@@ -1,16 +1,8 @@
-
-.contenedor-body{
-    background-color: black;
-    text-align: center;
-    color: azure;
-    padding-top: 200px;
-    padding-left: 60px;
-    padding-right: 60px;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 20PX;
-
+.contenedor-imagen{
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
-
 
 .contenedor-footer{
     display: inline-block;
@@ -24,9 +16,10 @@
 
 img{
     
-    height: 10%;
-    width: 10%;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
+   
 
 }
 
@@ -40,7 +33,3 @@ img{
     display: inline-block;
     justify-content: center
 }
-
-
-
- 

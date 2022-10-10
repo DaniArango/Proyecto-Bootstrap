@@ -11,7 +11,7 @@ for(let i=0; i<users.length; i++) {
   function generateListItems(arg){
     let allusers=" "
     for(let i=0; i<arg.length; i++) {
-        allusers +=  `<li>${arg[i].primerNombre}</li> `   }
+        allusers +=  `<li>${arg[i].primerNombre}</li>  `   }
     return allusers
   }
 
@@ -21,3 +21,10 @@ for(let i=0; i<users.length; i++) {
   </ol>
   `;
 
+
+
+
+
+
+
+  
